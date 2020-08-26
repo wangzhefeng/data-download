@@ -7,3 +7,4 @@ CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m1,CFBoiler_1min_metrics.csv,1min
 CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m3,CFBoiler_1min_metrics.csv,1min
 ExtCondensingTurbine,ydgm_e1|hpp_f1|turbine_w1|eturb_m1,ExtCondensingTurbine_1min_metrics.csv,1min
 ExtCondensingTurbine,ydgm_e1|hpp_f1|turbine_w1|eturb_m2,ExtCondensingTurbine_1min_metrics.csv,1min
+SteamPipeline,ydgm_e1|steampipeline_p1,SteamPipeline_1min_metrics.csv,1min
