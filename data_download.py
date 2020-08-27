@@ -181,10 +181,10 @@ if __name__ == "__main__":
     project_scopes = "yida/energy"
     cookie = "thingswise.web.proxy.session_id=s%3AYcEyCnrz_KQjNp21XjAJI6lf0F22XHLh.n9nq%2Fiqbr0tjicblNFjV9TKr4XE8GiE7GFk0TYJ%2BMRs; thingswise.web.app.session_id=s%3AG9urI4nMlxQp5bJJ4m5fafy7.xKRdcDgxg7Y4Rmtex%2BoLQZKYq9Cm0zHJcrXMpts%2Bdi8"
     # 查询时间
-    from_timestamp = 1597680000000  # 2020-08-17 00:00:00
-    to_timestamp = 1598284800000    # 2020-08-18 00:00:00
+    from_timestamp = 1597593600000  # 2020-08-17 00:00:00
+    to_timestamp = 1597683600000    # 2020-08-18 00:00:00
     # 需要下载的类
-    class_to_be_download = ["SteamPipeline"]
+    class_to_be_download = ["ExtCondensingTurbine"]
     # 生成下载数据配置参数
     parameters = generate_config(url_domain, project_scopes, cookie, from_timestamp, to_timestamp, class_to_be_download)
     # 下载数据
