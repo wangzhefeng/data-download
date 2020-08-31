@@ -1,4 +1,3 @@
-
 ExtCondensTurbineOP.steam_flow_in
 ExtCondensTurbineOP.steam_pressure_in
 ExtCondensTurbineOP.steam_temperature_in
@@ -24,15 +23,9 @@ ExtCondensTurbineOP.BFW_lowheater_temperature
 ExtCondensTurbineOP.BFW_deaerator_temperature
 ExtCondensTurbineOP.BFW_highheater_temperature
 
-
-
 ExtCondensTurbineOP.hp_steam_machine_opt
 ExtCondensTurbineOP.lp_steam_machine_opt
 ExtCondensTurbineOP.electricity_machine_opt
-
-
 ExtCondensTurbineOP.hp_steam_machine_opt_array
 ExtCondensTurbineOP.lp_steam_machine_opt_array
 ExtCondensTurbineOP.electricity_machine_opt_array
-
-

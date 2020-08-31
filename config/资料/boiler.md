@@ -67,7 +67,5 @@ CFBoilerOP.CoalFeeder_No1_Frequency
 CFBoilerOP.CoalFeeder_No2_Frequency
 CFBoilerOP.CoalFeeder_No3_Frequency
 
-
 CFBoilerOP.hp_steam_boiler_opt
-
 CFBoilerOP.hp_steam_boiler_opt_array
