@@ -4,10 +4,8 @@ Converter,steel_c|steel_d|steel_2_p|cvt_2_e,Converter_5s_metrics.csv,5s
 Converter,steel_c|steel_d|steel_3_p|cvt_3_e,Converter_5s_metrics.csv,5s
 BFGasPipeline,steel_c|steel_d|gas_p|bfgas_pipln_e,BFGasPipeline_5s_metrics.csv,5s
 SteamPipeline,ydgm_e1|steampipeline_p1,SteamPipeline_1min_metrics.csv,1min
-CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m1,CFBoiler_1h_metrics.csv,1h
-CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m3,CFBoiler_1h_metrics.csv,1h
-CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m1,CFBoiler_1d_metrics.csv,1d
-CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m3,CFBoiler_1d_metrics.csv,1d
+CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m1,CFBoiler_1min_metrics.csv,1min
+CFBoiler,ydgm_e1|hpp_f1|boiler_w1|boiler_m3,CFBoiler_1min_metrics.csv,1min
 ExtCondensingTurbine,ydgm_e1|hpp_f1|turbine_w1|eturb_m1,ExtCondensingTurbine_1min_metrics.csv,1min
 ExtCondensingTurbine,ydgm_e1|hpp_f1|turbine_w1|eturb_m2,ExtCondensingTurbine_1min_metrics.csv,1min
 BackPresTurbine,ydgm_e1|hpp_f1|turbine_w1|bturb_m1,BackPresTurbine_1min_metrics.csv,1min
