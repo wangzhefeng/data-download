@@ -1,2 +1,3 @@
 metric_list
-SteamPipelineOP.hp_steam_pressure
+SteamPipelineOP.electricity_power_ext
+SteamPipelineOP.electricity_price_ext
