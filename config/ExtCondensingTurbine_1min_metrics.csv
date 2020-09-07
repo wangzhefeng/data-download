@@ -3,7 +3,6 @@ ExtCondensTurbineOP.steam_flow_in
 ExtCondensTurbineOP.steam_pressure_in
 ExtCondensTurbineOP.steam_temperature_in
 ExtCondensTurbineOP.electricity_generation
-ExtCondensTurbineOP.steam_flow_out
 ExtCondensTurbineOP.steam_pressure_out
 ExtCondensTurbineOP.steam_temperature_out
 ExtCondensTurbineOP.steam_flow_side
