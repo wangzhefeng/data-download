@@ -104,7 +104,7 @@ def query_data(url_domain, project_scope, cookie, geo, metric, from_timestamp, t
             verify = False,
             timeout = 10
         )
-        # logging.error("response url:%s", response.url)
+        logging.error("response url:%s", response.url)
         # 数据解析
         if response.status_code == 200:
             result = response.json()
@@ -177,9 +177,9 @@ def integrate_data(parameters):
 
 if __name__ == "__main__":
     # 项目配置
-    url_domain = "192.168.108.221"
+    url_domain = "tpp-energy.gfg1.esquel.com"
     project_scopes = "yida/energy"
-    cookie = "thingswise.web.proxy.session_id=s%3AYcEyCnrz_KQjNp21XjAJI6lf0F22XHLh.n9nq%2Fiqbr0tjicblNFjV9TKr4XE8GiE7GFk0TYJ%2BMRs; thingswise.web.app.session_id=s%3AG9urI4nMlxQp5bJJ4m5fafy7.xKRdcDgxg7Y4Rmtex%2BoLQZKYq9Cm0zHJcrXMpts%2Bdi8"
+    cookie = "thingswise.web.proxy.session_id=s%3AfFvENqup4omGB4i8275AzASwyTCJWDj4.GlDWqRc%2FCp%2F%2BeJmZzOMgRL%2FJhwa22KhU0guyUZ01dX4; thingswise.web.app.session_id=s%3AintW3fyvlj7NHGMkrLBoWvEN.RyvXTErkqzKb36AhT7wtteQmf4u%2BB15iiKwmRe6YbK8"
     # 查询时间
     from_timestamp = 1596988800000
     to_timestamp = 1599408000000
@@ -189,3 +189,7 @@ if __name__ == "__main__":
     parameters = generate_config(url_domain, project_scopes, cookie, from_timestamp, to_timestamp, class_to_be_download)
     # 下载数据
     integrate_data(parameters)
+
+
+
+
