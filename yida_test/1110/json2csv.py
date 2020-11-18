@@ -79,5 +79,5 @@ if __name__ == '__main__':
     #path:json文件目录，如果多个json文件的metric要生成到同一个csv文件里变成多列，可将其放到同一目录下，然后函数type='merge'
     #如果多个json文件是同一metric的，将其放在同一目录下，然后函数type='concat'，生成只有一个metric的csv文件
 
-    path = '/mnt/e/dev/data-download'
+    path = '/mnt/e/dev/data-download/yida_test/1110'
     convert2csv(path, type='merge')
