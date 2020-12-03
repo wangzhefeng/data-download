@@ -1,7 +1,11 @@
+
+
+
+
 SteamPipelineOP
 ==================
 
-ydgm_e1|steampipeline_p1
+geo: ydgm_e1|steampipeline_p1
 -------------------------------------
 electricity_power_ext
 electricity_price_ext
