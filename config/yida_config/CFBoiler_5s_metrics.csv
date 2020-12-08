@@ -1,0 +1,5 @@
+metric_list
+CFBoilerOP.exhaust_oxygen_concentration
+CFBoilerOP.exhaust_gas_temperature
+CFBoilerOP.heat_loss_q2
+CFBoilerOP.efficiency_reverse

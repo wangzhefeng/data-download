@@ -4,28 +4,26 @@
 
 ### 1.概述
 
-* 本文档是对数据下载脚本 `data_download.py` 的使用说明
-* `data_download.py` 的作用是模拟平台提供的 API 功能进行数据批量下载
-* 主要亮点功能：
-    - 能够同时下载多个 `class` 、多个 `instance`、多种 `resolution`、多个 metric 的 dev环境、生产环境数据
-
+    * 本文档是对数据下载脚本 `data_download.py` 的使用说明
+    * `data_download.py` 的作用是模拟平台提供的 API 功能进行数据批量下载
+    * 主要亮点功能：
+        - 能够同时下载多个 `class` 、多个 `instance`、多种 `resolution`、多个 metric 的 dev环境、生产环境数据
 
 ### 2.项目目录说明
 
-1. 新建配置文件目录及配置文件:
-    - `/your_path/config/`
-        - `config.csv`
-        - `Class1_resolution_metrics.csv`
-        - `Class2_resolution_metrics.csv`
-2. 新建数据下载目录:
-    - `/your_path/result/`
-3. 配置好数据下载脚本参数:
-    - `/your_path/data_download.py`
-
+    1. 新建配置文件目录及配置文件:
+        - `/your_path/config/project_config/`
+            - `config.csv`
+            - `Class1_resolution_metrics.csv`
+            - `Class2_resolution_metrics.csv`
+    2. 新建数据下载目录:
+        - `/your_path/result/`
+    3. 配置好数据下载脚本参数:
+        - `/your_path/data_download.py`
 
 ### 3.生产环境的特殊性(以溢达项目为例)
 
-* 需要启动本地电脑代理
+    * 需要启动本地电脑代理
 
 ### 4.填写配置文件
 
