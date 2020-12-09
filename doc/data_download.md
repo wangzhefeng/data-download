@@ -53,7 +53,6 @@
 
 溢达项目下载 3 台锅炉 resolution=1min 数据的示例：
 
-
 | metric_list                 |
 |-----------------------------|
 | CFBoilerOP.outlet_steam_flow|

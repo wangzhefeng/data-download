@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-
 import numpy as np
 import pandas as pd
 import requests
@@ -31,18 +28,20 @@ import os
 """
 
 
+# 配置文件地址
+config_root_path = "config/"
+
 # 下载数据文件地址
-result_path = "result/"
-if not os.path.exists(result_path):
-    os.mkdir(result_path)
+data_root_path = "result/"
+if not os.path.exists(data_root_path):
+    os.mkdir(data_root_path)
 
 
-def generate_config(url_domain, project_scopes, cookie, from_timestamp, to_timestamp, class_to_be_download):
+def generate_config(config_path, url_domain, project_scopes, cookie, from_timestamp, to_timestamp, class_to_be_download):
     """
     生成配置信息
     """
-    root_path = "config/"
-    config_df = pd.read_csv(root_path + "config.csv")
+    config_df = pd.read_csv(config_path + "config.csv")
     parameters = {}
     for i in range(len(config_df)):
         if config_df["class"].iloc[i] not in class_to_be_download:
@@ -56,14 +55,12 @@ def generate_config(url_domain, project_scopes, cookie, from_timestamp, to_times
                 "from_timestamp": from_timestamp,
                 "to_timestamp": to_timestamp,
                 "resolution": config_df["resolution"].iloc[i],
-                "metrics": pd.read_csv(root_path + config_df["metric_file"].iloc[i])["metric_list"].to_list()
-
+                "metrics": pd.read_csv(config_path + config_df["metric_file"].iloc[i])["metric_list"].to_list(),
             }
         }
         parameters.update(temp_dict)
 
     return parameters
-
 
 
 def unix2time(value):
@@ -140,7 +137,7 @@ def parse_data(result):
     return df
 
 
-def integrate_data(parameters):
+def integrate_data(data_path, parameters):
     
     for key, value in parameters.items():
         df = pd.DataFrame()
@@ -171,25 +168,23 @@ def integrate_data(parameters):
             df = pd.concat([df, temp_df], axis = 1, sort = False)
             # print(f"instance={instance}, data = ", df)
 
-        df.to_csv(f'{result_path}{instance}_{int(time.time())}.csv' )
+        df.to_csv(f'{data_path}{instance}_{int(time.time())}.csv' )
 
 
 
 if __name__ == "__main__":
+    yida_config_path = os.path.join(config_root_path, "yida_config/")
+    yida_data_path = os.path.join(data_root_path, "yida_data/")
     # 项目配置
     url_domain = "tpp-energy.gfg1.esquel.com"
     project_scopes = "yida/energy"
     cookie = "thingswise.web.proxy.session_id=s%3AfFvENqup4omGB4i8275AzASwyTCJWDj4.GlDWqRc%2FCp%2F%2BeJmZzOMgRL%2FJhwa22KhU0guyUZ01dX4; thingswise.web.app.session_id=s%3AintW3fyvlj7NHGMkrLBoWvEN.RyvXTErkqzKb36AhT7wtteQmf4u%2BB15iiKwmRe6YbK8"
     # 查询时间
-    from_timestamp = 1596988800000
-    to_timestamp = 1599408000000
+    from_timestamp = 1607490000000
+    to_timestamp = 1607490600000
     # 需要下载的类
     class_to_be_download = ["CFBoiler"]
     # 生成下载数据配置参数
-    parameters = generate_config(url_domain, project_scopes, cookie, from_timestamp, to_timestamp, class_to_be_download)
+    parameters = generate_config(yida_config_path, url_domain, project_scopes, cookie, from_timestamp, to_timestamp, class_to_be_download)
     # 下载数据
-    integrate_data(parameters)
-
-
-
-
+    integrate_data(yida_data_path, parameters)
